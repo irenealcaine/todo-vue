@@ -40,7 +40,7 @@
   </script>
 
   <template>
-    <main class="app h-screen bg-gray-900 py-4 px-6 text-white">
+    <main class="app py-4 px-6 text-white">
 
       <section class="create-todo  md:w-3/5 mx-auto">
         <h1 class="text-3xl">Crea una nueva tarea</h1>
