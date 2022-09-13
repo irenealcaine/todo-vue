@@ -40,12 +40,12 @@
   </script>
 
   <template>
-    <main class="app py-4 px-6 text-white">
+    <main class="py-4 px-6 text-white">
 
-      <section class="create-todo  md:w-3/5 mx-auto">
+      <section class="md:w-3/5 mx-auto">
         <h1 class="text-3xl">Crea una nueva tarea</h1>
 
-        <form id="new-todo-form" @submit.prevent="addTodo" class="">
+        <form id="new-todo-form" @submit.prevent="addTodo">
 
           <input
             type="text"
@@ -65,7 +65,6 @@
                 id="category1"
                 value="business"
                 v-model="input_category" />
-              <span class="bubble business"></span>
               <div>Trabajo</div>
             </label>
 
@@ -76,7 +75,6 @@
                 id="category2"
                 value="personal"
                 v-model="input_category" />
-              <span class="bubble personal"></span>
               <div>Personal</div>
             </label>
 
@@ -86,9 +84,9 @@
         </form>
       </section>
 
-      <section class="todo-list  md:w-3/5 mx-auto">
+      <section class="md:w-3/5 mx-auto">
         <h3 class="mt-6">Lista de tareas</h3>
-        <div class="list" id="todo-list">
+        <div id="todo-list">
 
           <div
             v-for="todo in todos_asc"
@@ -98,15 +96,15 @@
 
           <div class="flex w-full">
             <label>
-              <input type="checkbox" v-model="todo.done" class="w-full"/>
+              <input type="checkbox" v-model="todo.done" class=""/>
             </label>
 
-            <div class="todo-content w-full">
+            <div class="w-full">
               <input type="text" v-model="todo.content" class="bg-transparent px-2 w-full"/>
             </div>
           </div>
 
-            <div class="actions">
+            <div>
               <button class="bg-red-600 py-1 px-2 rounded text-white font-bold" @click="removeTodo(todo)">Borrar</button>
             </div>
           </div>
