@@ -53,7 +53,7 @@
             id="content"
             placeholder=""
             v-model="input_content"
-            class="mt-3 rounded-xl border-2 border-green-600 py-2 px-4 w-full h-24 text-gray-300 bg-gray-700"/>
+            class="mt-3 rounded-xl border-2 border-green-600 py-2 px-4 w-full h-14 md:h-24 text-gray-300 bg-gray-700"/>
 
           <h4 class="mt-6">Selecciona una categoría</h4>
           <div class="flex justify-between">
